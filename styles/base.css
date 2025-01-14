@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 2px solid black;
+}
+.side-bar {
+  width: 30%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.middle-box {
+  height: 10vh;
+  border-bottom: 2px solid black;
+}
+
+.main {
+  width: 70%;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  border: 2px solid black;
+}
+.large-box {
+  width: 100%;
+  height: 50vh;
+  border-bottom: 2px solid black;
+}
+.yellow-box {
+  background: yellow;
+}
+
+.three-box {
+  display: flex;
+  gap: 50px;
+  border-top: 2px solid black;
+}
+.green-box {
+  background: green;
+}
+.same-box {
+  width: 30%;
+  height: 20vh;
+}
+.blue-box {
+  background: blue;
+}
+.red-box {
+  background: red;
+}
