@@ -73,3 +73,54 @@
 .red-box {
   background: red;
 }
+
+@media (max-width: 576px) {
+  .box {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .side-bar {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .middle-box.red-box {
+    width: 30%;
+    height: 5vh;
+  }
+
+  .small-box {
+    display: none;
+  }
+
+  .mobile-box {
+    display: block;
+    width: 30%;
+    height: 5vh;
+  }
+
+  .four-box {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .large-box {
+    height: 40vh;
+  }
+
+  .three-box {
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .same-box {
+    height: 20vh;
+    width: 100%;
+  }
+}
