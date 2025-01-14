@@ -9,18 +9,18 @@
   gap: 50px;
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .side-bar {
   width: 30%;
   display: flex;
   gap: 40px;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .middle-box {
   height: 10vh;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 .four-box {
@@ -44,12 +44,12 @@
   display: flex;
   gap: 50px;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .large-box {
   width: 100%;
   height: 50vh;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 .yellow-box {
   background: yellow;
@@ -58,7 +58,7 @@
 .three-box {
   display: flex;
   gap: 50px;
-  border-top: 2px solid black;
+  /* border-top: 2px solid black; */
 }
 .green-box {
   background: green;
@@ -72,6 +72,43 @@
 }
 .red-box {
   background: red;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .side-bar {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+  .middle-box {
+    width: 20%;
+  }
+
+  .four-box {
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .small-box {
+    height: 3vh;
+    width: 20%;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .three-box {
+    justify-content: space-between;
+  }
+  .same-box {
+    height: 30vh;
+  }
 }
 
 @media (max-width: 992px) {
@@ -115,6 +152,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 25px;
+    justify-content: inherit;
   }
 
   .same-box {
